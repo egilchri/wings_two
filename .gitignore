@@ -1,0 +1,14 @@
+# Ignore temporary files from audio synthesis
+temp_*.mp3
+
+# Ignore the virtual environment if you have one
+venv/
+.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
