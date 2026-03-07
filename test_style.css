@@ -1,0 +1,115 @@
+/* Variables for Dynamic Scaling */
+:root {
+    --reader-size: 14px;
+}
+
+/* Core Typography & Page Feel */
+body {
+    background-color: #fdfcf8;
+    font-family: "Palatino", "Georgia", serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+    line-height: 1.8;
+    font-size: var(--reader-size);
+}
+
+p {
+    font-size: var(--reader-size) !important;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+}
+
+/* Home Page: The Blue Square Grid */
+h1.main-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-variant: small-caps;
+    margin-top: 40px;
+    margin-bottom: 0.2em;
+}
+
+.chapter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+    list-style: none;
+}
+
+.chapter-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    background-color: #007bff;
+    border: 1px solid #0056b3;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #ffffff !important;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.chapter-square:hover {
+    transform: translateY(-5px);
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.square-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
+    font-family: sans-serif;
+}
+
+.square-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Narrative Pages: Header Layout */
+.chapter-header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.chapter-illustration img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Summaries & Analysis */
+details { 
+    margin-bottom: 2em; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background: #fff; 
+}
+
+details summary { 
+    cursor: pointer; 
+    padding: 15px; 
+    font-weight: bold; 
+    background-color: #f0f0f0; 
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .chapter-header-row {
+        flex-direction: column;
+        text-align: center;
+    }
+}
